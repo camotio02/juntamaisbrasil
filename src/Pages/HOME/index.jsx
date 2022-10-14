@@ -17,17 +17,16 @@ export const Home = () => {
     return (
         <>
             <div className="container">
+                <div data-aos="zoom-in-left" className="side-one">
+
+                </div>
+                <div data-aos="zoom-in-left" className="side-two">
+
+                </div>
+
                 <div className="logos-items">
                     <Logos />
                 </div>
-
-                <div className="side-one">
-
-                </div>
-                <div className="side-two">
-
-                </div>
-
                 {show ?
                     <div className="logos-bottom">
                         <div className="open-open" onClick={on_open}>
@@ -41,7 +40,6 @@ export const Home = () => {
                         </div>
                     </div>
                 }
-
             </div>
         </>
     )
