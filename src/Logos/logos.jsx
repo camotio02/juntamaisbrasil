@@ -15,7 +15,7 @@ const links = [
     { name_link: 'Tools' },
 ]
 export const Link = ({ name_link }) => {
-  
+
     return (
         <>
             <a data-aos="flip-left" className='links' href="">
@@ -26,13 +26,19 @@ export const Link = ({ name_link }) => {
 }
 export const Logos = () => {
     const [show, setShow] = useState(false)
+    const [a, setA] = useState(true)
 
 
     const click = () => {
+        setA(false)
         setShow(!show)
     }
     const closed_menu = () => {
         setShow(false)
+    }
+    const menu = () => {
+        setShow(false)
+        setA(!a)
     }
     useEffect(() => {
         Aos.init({ duration: 1000 })
@@ -47,30 +53,30 @@ export const Logos = () => {
                         <strong className='strong-two'>M</strong>
                         AIS
                     </div>
-
-                    <div className='logos-links'>
-                        <h1 id='ring-bell' className='ring-bell'>Junta Mais Brasil</h1>
-                        {
-                            links.map((item) => (
-                                <Link key={item.neme} {...item} />
-                            ))
-                        }
-                        <a data-aos="flip-left" className='links ring-bell' href="">
-                            Ring the bell
-                        </a>
-                    </div>
+                    {a ?
+                        <div className='logos-links'>
+                            {
+                                links.map((item) => (
+                                    <Link key={item.neme} {...item} />
+                                ))
+                            }
+                            <a data-aos="flip-left" className='links ring-bell' href="">
+                                Ring the bell
+                            </a>
+                        </div>
+                    : false}
 
                     <div className='logos-icons-items'>
                         <div className='icons-of-logos one'>
-                            <SearchIcon onClick={closed_menu}/>
+                            <SearchIcon onClick={closed_menu} />
                         </div>
 
                         <div className='icons-of-logos two' onClick={click}>
-                            <ComputerIcon/>
+                            <ComputerIcon />
                             {show ?
                                 <div className="icons-of">
                                     <div onClick={closed_menu} className='fundo-default'>
-                                        <Brightness2Icon className='icon-one' fontSize='small'/> night
+                                        <Brightness2Icon className='icon-one' fontSize='small' /> night
                                     </div>
                                     <div onClick={closed_menu} className='fundo-default'>
                                         <Brightness7Icon className='icon-two' fontSize='small' /> afternoon
@@ -84,7 +90,7 @@ export const Logos = () => {
                             }
                         </div>
                         <div className='icons-of-logos menu'>
-                            <MenuIcon onClick={closed_menu}/>
+                            <MenuIcon onClick={menu} />
                         </div>
                     </div>
                 </div>

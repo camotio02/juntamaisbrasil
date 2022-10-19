@@ -8,7 +8,8 @@
     width: 100%;
     min-height: 3.5rem;
     height: auto;
-    background-color: #7a297a;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-image: url(../assets/imagem-abstrata-de-cima-de-uma-onda-brilhante-de-agua-do-mar-azul-e-limpida-sobre-uma-praia-arenosa-para-um-lindo-plano-de-fundo-do-verao_160204-3189.webp);
 }
 
 .logos {
@@ -34,13 +35,13 @@
 }
 
 .strong-one {
-    color: #341933;
+    color: green;
     font-weight: 900;
     font-size: 2rem;
 }
 
 .strong-two {
-    color: #341933;
+    color: green;
     font-weight: 900;
     font-size: 2rem;
     margin-left: 0.4rem;
@@ -61,7 +62,11 @@
     justify-content: center;
     width: 20%;
     height: 100%;
-    color: #F5DF4D;
+    color: white;
+}
+
+#ring-bell {
+    display: none;
 }
 
 .ring-bell {
@@ -150,6 +155,73 @@
     display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 800px) {
     .logo-name-project {
         display: flex;
@@ -163,13 +235,13 @@
     }
 
     .strong-one {
-        color: #341933;
+        color: green;
         font-weight: 900;
         font-size: 2rem;
     }
 
     .strong-two {
-        color: #341933;
+        color: green;
         font-weight: 900;
         font-size: 2rem;
         margin-left: 0.4rem;
@@ -177,21 +249,26 @@
 
     .logos-links {
         position: absolute;
-        top: -5.6px;
-        left: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        top: 3.6rem;
+        right: 3rem;
         gap: 10px;
-        background-color: #341933;
-        width: 100%;
-        height: 100vh;
-        background-color: #312f31;
+
+        width: 15rem;
+        height: 20rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        animation: showsy 1s;
     }
 
     .links {
-        height: 20px;
+        width: 100%;
+        height: 15%;
+        border: 1px solid rgb(162, 162, 162);
+        background-image: var(--fundo_legal);
+        background-size: cover;
     }
 
     .logos-links {
@@ -200,12 +277,30 @@
         align-items: center;
         justify-content: center;
     }
+
+    #ring-bell {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6px;
+        padding-right: 25px;
+        width: 100%;
+        height: 4rem;
+        font-size: 20px;
+        background-color: #7a297a;
+        left: 0;
+        top: 0;
+
+    }
+
     .ring-bell {
         height: 3rem;
         border-radius: 1rem;
         color: black;
         background-color: #F5DF4D;
     }
+
     .logos-icons-items {
         display: flex;
         align-items: center;
@@ -233,6 +328,7 @@
         padding: 5px;
         border-radius: 15px;
         background-color: #B55A30;
+        animation: showicons 1s
     }
 
     .icon-one {
@@ -273,5 +369,128 @@
 
     100% {
         height: 5rem;
+    }
+}
+@keyframes showsy {
+    0% {
+        height: 3rem;
+        background-color: transparent;
+        filter: brightness(0.0);
+    }
+
+    25% {
+        height: 6rem;
+        filter: brightness(0.1);
+    }
+    20% {
+        height: 9rem;
+        background-color: transparent;
+        filter: brightness(0.2);
+
+    }
+    20% {
+        height: 12rem;
+        filter: brightness(0.3);
+
+    }
+    30% {
+        height: 15rem;
+ 
+        background-color: transparent;
+        filter: brightness(0.4);
+    }
+    50% {
+        height: 17rem;
+        background-color: transparent;
+        filter: brightness(0.5);
+
+    }
+    75% {
+        height: 18rem;
+        background-color: transparent;
+        filter: brightness(0.6);
+    }
+    80% {
+        height: 19rem;
+        filter: brightness(0.7);
+    }
+    90% {
+       background-color: transparent;
+       filter: brightness(0.8);
+    }
+    95% {
+        background-color: transparent;
+        filter: brightness(0.9);
+    }
+    100% {
+        height: 20rem;
+        filter: brightness(1);
+    }
+}
+@keyframes shows {
+    0% {
+        height: 0rem;
+    }
+
+    100% {
+        height: 5rem;
+    }
+}
+@keyframes showicons {
+    0% {
+        height: 0.5rem;
+        background-color: transparent;
+        filter: brightness(0.0);
+    }
+
+    25% {
+        height: 0.7rem;
+        filter: brightness(0.1);
+    }
+    20% {
+        height: 1rem;
+        background-color: transparent;
+        filter: brightness(0.2);
+
+    }
+    20% {
+        height: 1.5rem;
+        filter: brightness(0.3);
+
+    }
+    30% {
+        height: 1.7rem;
+ 
+        background-color: transparent;
+        filter: brightness(0.4);
+    }
+    50% {
+        height: 2rem;
+        background-color: transparent;
+        filter: brightness(0.5);
+
+    }
+    75% {
+        height: 2.5rem;
+        background-color: transparent;
+        filter: brightness(0.6);
+    }
+    80% {
+        height: 2.7rem;
+        filter: brightness(0.7);
+    }
+    90% {
+        height: 3.5rem;
+       background-color: transparent;
+       filter: brightness(0.8);
+    }
+    95% {
+        height: 5rem;
+        background-color: transparent;
+        filter: brightness(0.9);
+    }
+    100% {
+        height: 6rem;
+        filter: brightness(1);
     }
 }

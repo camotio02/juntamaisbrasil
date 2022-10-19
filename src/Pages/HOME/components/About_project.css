@@ -1,0 +1,262 @@
+.about-junta-mais {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    padding: 2%;
+    width: 100%;
+    min-height: 30rem;
+    height: auto;
+    background-color: #555555;
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.junta-mais-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+
+.junta-mais-h1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: right;
+    width: 100%;
+
+}
+
+.Junta-mais-ong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+    margin-right: 5px;
+    border: 1px solid yellow;
+    color: yellow;
+}
+
+.letra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+    font-weight: 800;
+    margin-left: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.junta-mais-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: #D3D3D3;
+    font: Helvetica;
+    font-weight: 500;
+    font-size: 100%;
+
+}
+
+.data-description {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    width: 100%;
+    height: 5rem;
+    gap: 2rem;
+
+}
+
+.imag-avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+}
+
+.description {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 90%;
+    width: 100%;
+    color: white;
+
+}
+
+/* segundo card */
+.what-junta-mais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    padding: 20px;
+    padding-left: 10px;
+    background-color: transparent;
+    border-radius: 2rem;
+
+}
+
+.what-h2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    color: #444332;
+}
+
+.what-h2-segundo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    width: 100%;
+    margin-top: 2rem;
+    height: auto;
+    color: #444332;
+}
+
+.what-descritpion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 90%;
+    margin-top: 1rem;
+    background-color: #444332;
+    border-radius: 2rem;
+    border-right: 15px solid rgb(137, 120, 120);
+    padding: 20px;
+    margin-left: 5rem;
+    border-bottom: 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.what-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    min-height: 10rem;
+    height: auto;
+}
+
+.card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    width: 90%;
+    height: auto;
+    background-color: #555555;
+    border: 0.3px solid black;
+    color: tan;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    box-shadow: rgba(14, 14, 14, 0.4) 5px 5px, rgba(104, 101, 101, 0.3) 10px 10px, rgba(36, 35, 35, 0.2) 15px 15px, rgba(13, 11, 11, 0.1) 20px 20px, rgba(255, 255, 255, 0.05) 25px 25px;
+}
+
+.discription-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    color: #D3D3D3;
+    padding: 20px;
+    border-left: 0.5px solid white;
+    border-bottom: 0.5px solid white;
+}
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    min-height: 7rem;
+    height: auto;
+    background-color: #555555;
+    padding: 0px 5px 0px 0;
+    border-bottom: 0.5px solid rgb(109, 107, 107);
+    border-top: 0.5px solid rgb(133, 133, 133);
+}
+
+.depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    min-height: 7rem;
+    height: auto;
+    background-color: white;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding-left: 3px;
+
+}
+
+.description-depoimetado {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    height: 60%;
+    color: #444332;
+}
+
+.depoiment {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    width: 100%;
+    height: 40%;
+}
+
+
+.depoimento:hover {
+    filter: brightness(1);
+    border-radius: 0;
+    transition: .5s;
+    margin-left: 30px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: inset 0 0 0 var(--spr, calc(.5*(1 - var(--hov))*var(--l))) hsl(0, 0%, 40%);
+}
+
+.avatar-deoimento {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 3rem;
+}
+
+.name {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: auto;
+    height: 100%;
+    color: green;
+}

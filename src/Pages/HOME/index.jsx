@@ -6,6 +6,8 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import { useState } from "react";
 import { Logos } from "../../Logos/logos";
+import { About_project } from "./components/About_project";
+import { Rotape } from "../../Components/rotape/rotape";
 export const Home = () => {
     const [show, setShow] = useState(false)
     useEffect(() => {
@@ -18,7 +20,7 @@ export const Home = () => {
         <>
             <div className="container">
                 <div data-aos="zoom-in-left" className="side-one">
-
+                    <About_project />
                 </div>
                 <div data-aos="zoom-in-left" className="side-two">
 
@@ -40,6 +42,10 @@ export const Home = () => {
                         </div>
                     </div>
                 }
+             
+            <div className="rotape">
+                <Rotape />
+            </div>
             </div>
         </>
     )
