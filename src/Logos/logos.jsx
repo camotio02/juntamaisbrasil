@@ -24,9 +24,19 @@ export const Link = ({ name_link }) => {
         </>
     )
 }
+const Links = () => {
+    return <>{
+        links.map((item) => (
+            <Link key={item.neme} {...item} />
+        ))
+    }
+        <a data-aos="flip-left" className='links ring-bell' href="">
+            Ring the bell
+        </a></>
+}
 export const Logos = () => {
     const [show, setShow] = useState(false)
-    const [a, setA] = useState(true)
+    const [a, setA] = useState(false)
 
 
     const click = () => {
@@ -45,6 +55,11 @@ export const Logos = () => {
     })
     return (
         <>
+            {a &&
+                <div className='menu-celular'>
+                    <Links />
+                </div>
+            }
             <div className='container-logos'>
                 <div className="logos" data-aos="fade-down">
                     <div className='logo-name-project'>
@@ -53,18 +68,11 @@ export const Logos = () => {
                         <strong className='strong-two'>M</strong>
                         AIS
                     </div>
-                    {a ?
-                        <div className='logos-links'>
-                            {
-                                links.map((item) => (
-                                    <Link key={item.neme} {...item} />
-                                ))
-                            }
-                            <a data-aos="flip-left" className='links ring-bell' href="">
-                                Ring the bell
-                            </a>
-                        </div>
-                    : false}
+
+                    <div className='logos-links'>
+                        <Links />
+                    </div>
+
 
                     <div className='logos-icons-items'>
                         <div className='icons-of-logos one'>

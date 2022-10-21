@@ -90,9 +90,10 @@
     font-family: cursive;
     border-bottom: 5px solid green;
     background-color: #333300;
-    color: green;
-    height: 5rem;
-    animation: shows 0.7s;
+    color: #350054;
+    height:4rem;
+    transition: .5s;
+    font-size: 1.2rem;
 }
 
 .logos-icons-items {
@@ -216,10 +217,9 @@
 
 
 
-
-
-
-
+.menu-celular {
+    display: none;
+}
 
 
 @media only screen and (max-width: 800px) {
@@ -248,6 +248,10 @@
     }
 
     .logos-links {
+        display: none;
+    }
+    .menu-celular {
+
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -271,12 +275,6 @@
         background-size: cover;
     }
 
-    .logos-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
 
     #ring-bell {
         position: fixed;
